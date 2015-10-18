@@ -10,8 +10,42 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<bean id="beanTest" class="com.zaoming.test.BeanTest">
-		<property name="name" value="ldt" />
+	<!-- 资源路径配置 -->
+	<bean id="SourceConf" class="com.codeCoder.conf.SourceConf">
+		<property name="sourceBasePath" value="D:/GitHub/code-coder/src/main/webapp/source/" />
+		<property name="sourceFileList">
+			<list>
+				<value>table_object.json</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 模板路径配置 -->
+	<bean id="CodeTmplConf" class="com.codeCoder.conf.CodeTmplConf">
+		<property name="codeTmplBasePath"
+			value="D:/GitHub/code-coder/src/main/webapp/codeTmpl/" />
+		<property name="codeTmplFileMap">
+			<map>
+				<entry key="" value="" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- 代码文件生成路径配置 -->
+	<bean id="OutputConf" class="com.codeCoder.conf.OutputConf">
+		<property name="outputBasePath" value="D:/GitHub/code-coder/src/main/webapp/output/" />
+		<property name="outputFileMap">
+			<map>
+				<entry key="" value="" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- 配置文件工厂 -->
+	<bean id="CoderConfFactory" class="com.codeCoder.conf.CoderConfFactory">
+		<property name="sourceConf" ref="SourceConf" />
+		<property name="codeTmplConf" ref="CodeTmplConf" />
+		<property name="outputConf" ref="OutputConf" />
 	</bean>
 
 </beans>

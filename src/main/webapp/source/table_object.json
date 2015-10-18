@@ -1,0 +1,20 @@
+[ {
+	"classInfo" : {
+		"packageName" : "com.zaoming.test",
+		"className" : "TestCoder",
+		"tableName" : "testCoder"
+	},
+	"attrInfoList" : [ {
+		"attrTitle" : "String--varchar",
+		"attrName" : "attr1",
+		"attrType" : "String",
+		"columnType" : "varchar(50)",
+		"columnChecks" : "primary key"
+	}, {
+		"attrTitle" : "Long--bigint",
+		"attrName" : "attr2",
+		"attrType" : "Long",
+		"columnType" : "bigint",
+		"columnChecks" : "not null"
+	} ]
+} ]

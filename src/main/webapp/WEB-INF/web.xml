@@ -18,9 +18,21 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+
 	<!-- 防止Spring内存溢出监听器 -->
 	<listener>
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
 	</listener>
+
+	<!-- servlet -->
+	<servlet>
+		<servlet-name>CodeCoderAPI</servlet-name>
+		<servlet-class>com.codeCoder.api.CodeCoderAPI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CodeCoderAPI</servlet-name>
+		<url-pattern>/codeCoderAPI</url-pattern>
+	</servlet-mapping>
+	<!-- //servlet -->
 
 </web-app>
