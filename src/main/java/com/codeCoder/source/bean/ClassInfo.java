@@ -6,6 +6,25 @@ public class ClassInfo {
 	private String className;
 	private String tableName;
 
+	private String daoPackagePath;
+	private String firstLowerName;
+
+	public String getDaoPackagePath() {
+		return daoPackagePath;
+	}
+
+	public void setDaoPackagePath(String daoPackagePath) {
+		this.daoPackagePath = daoPackagePath;
+	}
+
+	public String getFirstLowerName() {
+		return firstLowerName;
+	}
+
+	public void setFirstLowerName(String firstLowerName) {
+		this.firstLowerName = firstLowerName;
+	}
+
 	public String getPackageName() {
 		return packageName;
 	}

@@ -26,7 +26,17 @@
 			value="D:/GitHub/code-coder/src/main/webapp/codeTmpl/" />
 		<property name="codeTmplFileMap">
 			<map>
-				<entry key="" value="" />
+				<entry key="api" value="API.jtmpl" />
+				<entry key="iAction" value="IAction.jtmpl" />
+				<entry key="action" value="Action.jtmpl" />
+				<entry key="check" value="Check.jtmpl" />
+				<entry key="iService" value="IService.jtmpl" />
+				<entry key="service" value="Service.jtmpl" />
+				<entry key="iDao" value="IDAO.jtmpl" />
+				<entry key="dao" value="DAO.jtmpl" />
+				<entry key="po" value="PO.jtmpl" />
+				<entry key="sqlXml" value="SQL.xtmpl" />
+				<entry key="sql" value="table.stmpl" />
 			</map>
 		</property>
 	</bean>
@@ -36,7 +46,17 @@
 		<property name="outputBasePath" value="D:/GitHub/code-coder/src/main/webapp/output/" />
 		<property name="outputFileMap">
 			<map>
-				<entry key="" value="" />
+				<entry key="api" value="$packagePath$/ws/$className$API.java" />
+				<entry key="iAction" value="$packagePath$/ucc/I$className$Action.java" />
+				<entry key="action" value="$packagePath$/ucc/impl/$className$Impl.java" />
+				<entry key="check" value="$packagePath$/ucc/impl/$className$Check.java" />
+				<entry key="iService" value="$packagePath$/bs/I$className$Service.java" />
+				<entry key="service" value="$packagePath$/bs/impl/$className$ServiceImpl.java" />
+				<entry key="iDao" value="$daoPackagePath$/I$className$DAO.java" />
+				<entry key="dao" value="$daoPackagePath$/impl/$className$DAOImpl.java" />
+				<entry key="po" value="$daoPackagePath$/po/$className$PO.java" />
+				<entry key="sqlXml" value="$daoPackagePath$/po/$firstLowerName$_SqlMap.xml" />
+				<entry key="sql" value="$packagePath$/$tableName$.sql" />
 			</map>
 		</property>
 	</bean>

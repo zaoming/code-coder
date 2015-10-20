@@ -5,7 +5,7 @@ import java.util.Map;
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
 
-public final class StringTemplateRenderer {
+public final class STRenderer {
 
 	/**
 	 * 模板渲染
