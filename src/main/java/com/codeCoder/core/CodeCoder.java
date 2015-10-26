@@ -48,6 +48,7 @@ public class CodeCoder {
 		System.out.println(JsonUtil.toJsonString(classTableBeanList));
 
 		// 4.根据数据对象构造配置对象
+		SourceConvertor.compile(classTableBeanList);
 
 		// 5.根据数据对象与配置对象进行模板替换生成代码文件
 

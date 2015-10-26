@@ -6,6 +6,7 @@ public class ClassInfo {
 	private String className;
 	private String tableName;
 
+	// 配置文件中没有，需要后期生成
 	private String daoPackagePath;
 	private String firstLowerName;
 
